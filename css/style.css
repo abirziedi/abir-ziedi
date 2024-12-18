@@ -1,0 +1,303 @@
+body {
+    font-family:  italic normal bold normal 3em/3 Helvetica, Arial,  sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 128, 255, 0.5), rgba(227, 145, 185, 0.5));
+ 
+    color: #ffffff;
+
+}
+
+header {
+    
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    text-shadow:
+    -1px -1px 1px #aaa,
+    0px 4px 1px rgba(0, 0, 0, 0.5),
+    4px 4px 5px rgba(0, 0, 0, 0.7),
+    0px 0px 7px rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+    list-style: none;
+   width: none;
+ 
+    display: flex;
+    justify-content: center;
+    background-color: #ea9cc4;
+    text-align: center;
+    padding: 10px;
+    text-shadow:
+    -1px -1px 1px #aaa,
+    0px 4px 1px rgba(0, 0, 0, 0.5),
+    4px 4px 5px rgba(0, 0, 0, 0.7),
+    0px 0px 7px rgba(0, 0, 0, 0.4);
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #fbebf6;
+    border-radius: 5px;
+}
+
+main {
+    padding: 10px;
+    text-align: center;
+    
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ea9cc4;
+    color: white;
+}
+
+form {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  justify-content: center;
+  gap: 20px; 
+  padding: 30px;
+
+}
+
+.image-incline {
+  width: 240px; /* Largeur de l'image */
+  height: auto; /* Hauteur ajustée automatiquement */
+  transform: rotate(-10deg); /* Inclinaison de l'image */
+  border: 3px solid #333; /* Bordure pour l'image */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Ombre douce */
+}
+
+/* Style pour le texte */
+.texte-droite {
+  max-width: 468px; /* Limiter la largeur du texte */
+  font-family: Arial, sans-serif;
+}
+
+.texte-droite h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.texte-droite p {
+  margin: 10px 0 0 0;
+  line-height: 1.8;
+  color: #555;
+}
+
+.image-main {
+
+  height: 28px;
+}
+.image-parcours {
+
+  height: 400px;
+  width: auto;
+}
+.diplome{
+ font-size: 28px;
+ color: #333;
+ font-style: oblique;
+}
+.diplomes{
+  font-size: 48px;
+
+ }
+ .buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Les boutons passent à la ligne si nécessaire */
+  gap: 15px; /* Espacement entre les boutons */
+  margin-top: 20px;
+}
+
+/* Style des boutons */
+.competence-btn {
+  background-color: #ea9cc4; /* Couleur verte */
+  color: rgb(18, 4, 4);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.competence-btn:hover {
+  background-color: #d90c76; 
+}
+#competence-details {
+  text-align: left;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #ea9cc4;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.competence-text {
+  display: none; 
+}
+p{
+  color: #333;
+}
+.experiences {
+  margin-top: 20px;
+}
+
+table {
+  width: 80%;
+  margin: 25px auto;
+  border-collapse:collapse;
+  
+  border: 2px solid #110303;
+  border-radius: 10px;
+}
+table th {
+  padding: 35px;
+  text-align: center;
+  border-bottom: 2px solid #000000;
+  font-size: 20px;
+}
+
+table td {
+  padding: 32px;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+  
+  font-size: 18px;
+}
+
+table th {
+  background-color: #ea9cc4;
+  color: rgb(0, 0, 0);
+}
+table tr {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  
+}
+table tr:hover {
+  background-color: #f23094;
+  color: #000000;
+}
+.matieres h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.matieres ul {
+  list-style-type: disc;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0;
+  width: 30%;
+  color: #000;
+  font-size: 18px;
+  
+ 
+}
+
+.matieres li {
+  margin-bottom: 10px;
+  background-color: #ea9cc4;
+ 
+}
+.matiere {
+  font-size: 30px;
+ 
+}
+.envoyer{
+  color: #000;
+  font-size: 20px;
+  background-color: #e075ac;
+}
+.formulaire{
+  color: #000;
+  font-size: 20px;
+  
+}
+.name, .email{
+  width: 400px;
+  height: 32px;
+}
+.message{
+  width: 400px;
+  height: 68px;
+}
+.passion{
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+
+}
+.qualités{
+  color: #000;
+  font-size: 16px;
+  text-align: leftcentre;
+
+}
+.temoignage ul {
+  list-style-type: disc;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0;
+  width: 36%;
+  color: #000;
+  font-size: 18px;
+  
+ 
+}
+
+.temoignage li {
+  margin-bottom: 10px;
+  background-color: #ea9cc4;
+ 
+}
+.temoignage h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 30px;
+}

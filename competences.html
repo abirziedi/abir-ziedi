@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mes Compétences Informatiques</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="manifestations.html">Manifestations</a></li>
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="temoignage.html">Témoignage</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="competences">
+            <h2>Catégories de compétences</h2>
+            <div class="buttons-container">
+                <button class="competence-btn" onclick="afficherCompetence('environnements')">Environnements de développement</button>
+                <button class="competence-btn" onclick="afficherCompetence('frameworks')">Frameworks</button>
+                <button class="competence-btn" onclick="afficherCompetence('langages')">Langages de programmation</button>
+                <button class="competence-btn" onclick="afficherCompetence('sgbd')">SGBD</button>
+                <button class="competence-btn" onclick="afficherCompetence('agiles')">Méthodes agiles</button>
+            </div>
+
+            <!-- Section pour afficher les détails des compétences -->
+            <div id="competence-details">
+                <p id="environnements" class="competence-text">
+                    <strong>Environnements de développement :</strong><br>
+                    1. Environnements de développement intégrés (IDE) : Visual Studio, PyCharm, Eclipse, Android Studio<br>
+                    2. Éditeurs de texte populaires : Visual Studio Code (VS Code), Notepad++<br>
+                    3. Environnements pour le développement scientifique : Jupyter Notebook, RStudio, Spyder<br>
+                    4. Environnements en ligne : GitHub Codespaces
+                </p>
+                <p id="frameworks" class="competence-text">
+                    <strong>Frameworks :</strong><br>
+                    1. Frameworks pour le développement web : Django (Python), Laravel (PHP)<br>
+                    2. Frameworks pour le Big Data : Hadoop MapReduce<br>
+                    3. Frameworks pour le front-end : Bootstrap (HTML/CSS/JS)
+                </p>
+                <p id="langages" class="competence-text">
+                    <strong>Langages de programmation :</strong><br>
+                    1. Généralistes : Python, Java, C<br>
+                    2. Développement web : HTML/CSS, JavaScript, PHP, Laravel, Django<br>
+                    3. Développement mobile : XML, JavaScript<br>
+                    4. Science des données et IA : Python<br>
+                    5. Bases de données : SQL, PL/SQL, NoSQL
+                </p>
+                <p id="sgbd" class="competence-text">
+                    <strong>SGBD :</strong><br>
+                    1. SGBD Relationnels : MySQL, Oracle Database, Microsoft SQL Server, SQLite<br>
+                    2. SGBD NoSQL : MongoDB<br>
+                    3. Big Data : Apache Hadoop (HDFS)
+                </p>
+                <p id="agiles" class="competence-text">
+                    <strong>Méthodes Agiles :</strong><br>
+                    1. Scrum<br>
+                    Description : Framework agile basé sur la livraison itérative et incrémentale.<br>
+                    Principes clés : Travail organisé en sprints (cycles de 8 à 14 semaines).<br>
+                    Réunions régulières : daily stand-up (réunion quotidienne), revue de sprint et rétrospective.<br>
+                    Rôles définis : Scrum Master, Product Owner et équipe de développement.<br>
+                    Utilisation : Idéal pour les projets complexes nécessitant des livraisons fréquentes.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mon Site Personnel</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

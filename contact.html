@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="manifestations.html">Manifestations</a></li>
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="temoignage.html">Témoignage</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="mailto:example@email.com" method="post" enctype="text/plain">
+            <label for="name" class="formulaire">Nom :</label><br>
+            <input type="text" class="name" id="name" name="name" required><br>
+            <label for="email" class="formulaire">Email :</label><br>
+            <input type="email" class="email" id="email" name="email" required><br>
+            <label for="message" class="formulaire">Message :</label><br>
+            <textarea id="message" class="message" name="message" rows="4" required></textarea><br>
+            <button type="submit" class="envoyer">Envoyer</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mon Site Personnel</p>
+    </footer>
+</body>
+</html>

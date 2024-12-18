@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <style>
+        /* Styles CSS pour le quizz */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+      
+        main {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h2{
+            color: #333;
+            text-align: center;
+        }
+
+     
+        form {
+            margin: 20px 0;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        button {
+            background-color: #dd61b6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #ae0882;
+        }
+
+        .result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .correct-answers {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quizz : Programmation</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="manifestations.html">Manifestations</a></li>
+                <li><a href="matieres.html">Matières</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="temoignage.html">Témoignage</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Testez vos connaissances !</h2>
+        <form id="quizz-form">
+            <div class="question">
+                <label>1. Quel langage est utilisé pour le développement d'applications Android ?</label>
+                <input type="radio" name="q1" value="Java"> Java<br>
+                <input type="radio" name="q1" value="Python"> Python<br>
+                <input type="radio" name="q1" value="PHP"> PHP<br>
+            </div>
+
+            <div class="question">
+                <label>2. Quel framework est associé à Python pour le développement web ?</label>
+                <input type="radio" name="q2" value="Laravel"> Laravel<br>
+                <input type="radio" name="q2" value="Django"> Django<br>
+                <input type="radio" name="q2" value="React"> React<br>
+            </div>
+
+            <div class="question">
+                <label>3. Quelle commande est utilisée pour cloner un projet sur GitHub ?</label>
+                <input type="radio" name="q3" value="git commit"> git commit<br>
+                <input type="radio" name="q3" value="git push"> git push<br>
+                <input type="radio" name="q3" value="git clone"> git clone<br>
+            </div>
+
+            <div class="question">
+                <label>4. Que signifie HTML ?</label>
+                <input type="radio" name="q4" value="Hyper Text Markup Language"> Hyper Text Markup Language<br>
+                <input type="radio" name="q4" value="High Text Machine Learning"> High Text Machine Learning<br>
+                <input type="radio" name="q4" value="Hyperlinks Text Multiple Language"> Hyperlinks Text Multiple Language<br>
+            </div>
+
+            <div class="question">
+                <label>5. Quel SGBD est orienté NoSQL ?</label>
+                <input type="radio" name="q5" value="MySQL"> MySQL<br>
+                <input type="radio" name="q5" value="MongoDB"> MongoDB<br>
+                <input type="radio" name="q5" value="Oracle"> Oracle<br>
+            </div>
+
+            <div class="question">
+                <label>6. Quelle méthode agile utilise les "sprints" ?</label>
+                <input type="radio" name="q6" value="Scrum"> Scrum<br>
+                <input type="radio" name="q6" value="Kanban"> Kanban<br>
+                <input type="radio" name="q6" value="Waterfall"> Waterfall<br>
+            </div>
+
+            <div class="question">
+                <label>7. Quel langage est principalement utilisé pour le Big Data ?</label>
+                <input type="radio" name="q7" value="Hadoop"> Hadoop<br>
+                <input type="radio" name="q7" value="PHP"> PHP<br>
+                <input type="radio" name="q7" value="C++"> C++<br>
+            </div>
+
+            <div class="question">
+                <label>8. Quel IDE est utilisé pour Python ?</label>
+                <input type="radio" name="q8" value="PyCharm"> PyCharm<br>
+                <input type="radio" name="q8" value="Eclipse"> Eclipse<br>
+                <input type="radio" name="q8" value="VSCode"> VSCode<br>
+            </div>
+
+            <div class="question">
+                <label>9. Quelle technologie est utilisée pour les applications mobiles hybrides ?</label>
+                <input type="radio" name="q9" value="React Native"> React Native<br>
+                <input type="radio" name="q9" value="Django"> Django<br>
+                <input type="radio" name="q9" value="Laravel"> Laravel<br>
+            </div>
+
+            <div class="question">
+                <label>10. Quelle est la fonction principale de SQL ?</label>
+                <input type="radio" name="q10" value="Gestion des données"> Gestion des données<br>
+                <input type="radio" name="q10" value="Programmation web"> Programmation web<br>
+                <input type="radio" name="q10" value="Analyse de données"> Analyse de données<br>
+            </div>
+
+            <button type="button" onclick="corrigerQuizz()">Valider</button>
+        </form>
+
+        <div class="result" id="result"></div>
+        <div class="correct-answers" id="answers"></div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mon Site Personnel</p>
+    </footer>
+
+    <script>
+        function corrigerQuizz() {
+            const reponsesCorrectes = {
+                q1: "Java",
+                q2: "Django",
+                q3: "git clone",
+                q4: "Hyper Text Markup Language",
+                q5: "MongoDB",
+                q6: "Scrum",
+                q7: "Hadoop",
+                q8: "PyCharm",
+                q9: "React Native",
+                q10: "Gestion des données"
+            };
+    
+            let score = 0;
+            const totalQuestions = 10;
+            let toutesReponsesCochees = true;
+    
+            // Vérifier si toutes les questions ont une réponse cochée
+            for (let question in reponsesCorrectes) {
+                const selected = document.querySelector(`input[name=${question}]:checked`);
+                if (!selected) {
+                    toutesReponsesCochees = false;
+                    break; // Arrêter la vérification dès qu'une question est sans réponse
+                }
+            }
+    
+            // Si une question n'a pas de réponse cochée
+            if (!toutesReponsesCochees) {
+                alert("Veuillez répondre à toutes les questions avant de valider le quiz !");
+                return; // Arrêter la fonction
+            }
+    
+            // Calcul du score si toutes les réponses sont cochées
+            for (let question in reponsesCorrectes) {
+                const selected = document.querySelector(`input[name=${question}]:checked`);
+                if (selected && selected.value === reponsesCorrectes[question]) {
+                    score++;
+                }
+            }
+    
+            // Affichage des résultats
+            document.getElementById("result").innerText = `Votre score : ${score} / ${totalQuestions}`;
+    
+            let answers = "<h3>Réponses correctes :</h3><ul>";
+            for (let question in reponsesCorrectes) {
+                answers += `<li>${reponsesCorrectes[question]}</li>`;
+            }
+            answers += "</ul>";
+            document.getElementById("answers").innerHTML = answers;
+        }
+    </script>
+    
+</body>
+</html>
